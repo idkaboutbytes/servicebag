@@ -1,0 +1,25 @@
+name = "idkaboutbytes/servicebag"
+version = "1.0.0"
+description = "ServiceBag package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/servicebag"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "src/**/*.luau",
+]
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[dependencies]
+BaseObject = { repo = "idkaboutbytes/baseobject", rev = "v1.0.0" }
+Signal = { wally = "kineticwallet/lemon-signal", version = "^1.10.0" }
